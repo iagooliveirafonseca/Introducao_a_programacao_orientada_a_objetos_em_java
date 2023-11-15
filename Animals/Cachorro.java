@@ -1,6 +1,9 @@
 package Animals;
 
 public class Cachorro {
+
+    //Atributos
+    static int numeroDeCachorros;
     private String nome;
     private String cor;
     private int idade;
@@ -11,14 +14,14 @@ public class Cachorro {
     // Construtores 
     public Cachorro(){};
 
-    public Cachorro(String nome,String cor,int idade, Double peso){
+    public Cachorro(String nome,String cor,int idade, Double peso, String estadoDeEspirito){
         this.nome = nome;
         this.cor = cor;
         this.idade = idade;
         this.peso = peso;
-   
+        this.estadoDeEspirito = estadoDeEspirito;
      
-
+        numeroDeCachorros ++;
     }
 
     // Metodos
@@ -54,6 +57,14 @@ public class Cachorro {
         this.peso = peso;
     }
 
+      public int numeroDeCachorros(){
+        return this.numeroDeCachorros;
+    }
+
+    public void numeroDeCachorros(int numeroDeCachorros){
+        this.numeroDeCachorros = numeroDeCachorros;
+    }
+
 
 
 
@@ -85,7 +96,13 @@ public class Cachorro {
                 this.estadoDeEspirito = "Neutro";
         }
         return this.estadoDeEspirito;
+
     }
+
+      @Override
+     public String toString(){
+        return "Cachorro{" + "nome=" + nome + '\'' + '}';
+     }
     // public String interagir(String acao){
     // if(acao.equals("carinho")){
     // estadoDeEspirito = "Feliz";
