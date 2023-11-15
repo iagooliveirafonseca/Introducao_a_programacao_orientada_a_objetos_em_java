@@ -11,7 +11,10 @@ public class non_executables_classes {
         cachorro1.cor = "Preto";
         cachorro1.peso = 2.3;
 
-        System.out.println(cachorro1);
+        cachorro1.latir();
+        System.out.println("O cachorro pegou a " + cachorro1.pegar());
+        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir"));
+       
     }
 
 }
