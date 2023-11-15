@@ -6,14 +6,13 @@ public class non_executables_classes {
 
         Cachorro cachorro1 = new Cachorro();
 
-        cachorro1.nome = "Puppy";
-        cachorro1.idade = 2;
-        cachorro1.cor = "Preto";
-        cachorro1.peso = 2.3;
+  
+        cachorro1.setNome("Puppy"); 
+        cachorro1.setIdade(2); 
+        cachorro1.setCor("Preto"); 
+        cachorro1.setPeso(2.3); ;
 
-        cachorro1.latir();
-        System.out.println("O cachorro pegou a " + cachorro1.pegar());
-        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir"));
+
        
     }
 
